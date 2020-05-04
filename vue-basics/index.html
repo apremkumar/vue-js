@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Product App</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <div class="nav-bar"><span class="cart">Cart ({{cart.length}})</span></div>
+            <product :premium="premium" :cart="cart" @add-to-cart="updateCart" @remove-from-cart="removeProductFromCart">
+            </product>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>
